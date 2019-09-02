@@ -73,7 +73,7 @@
     </main>
     
     <aside>
-        <img src="images/laptop.jpg" alt="Laptop">
+        <img src="images/laptop.png" alt="Laptop">
     </aside>
     
     </div>
