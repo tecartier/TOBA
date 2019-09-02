@@ -6,12 +6,13 @@
 
 package business;
 
+import java.io.Serializable;
 /**
  *
  * @author te_c1
  */
-public class User {
-    String firstName, lastName, email, streetAddress, city, state, zip, phone;
+public class User implements Serializable{
+    String firstName, lastName, email;
 
     
     public User(){
@@ -19,22 +20,40 @@ public class User {
     }
     
     public User(String firstName, String lastName, 
-            String email, String streetAddress,
-            String city, String state, String zip, String phone){
+            String email){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.streetAddress = streetAddress;
-        this.city = city;
-        this.state = state;
-        this.zip = zip;
-        this.phone = phone;
-        
+       
     }
+    
+    public void setFirstName(String fName){
+        this.firstName = fName;
+    }
+    
+    public void setLastName(String lName){
+        this.lastName = lName;
+    }
+    
+    public void setEmail(String email){
+        this.email = email;
+    }
+    
+    public String getFirstName(){
+        return firstName;
+    }
+    
+    public String getLastName(){
+        return lastName;
+    }
+    
+    public String getEmail(){
+        return email;
+    }
+    
     @Override
     public String toString(){
      return  (super.toString()+ " " + firstName +" "+ lastName +
-              "\n" +  email + "\n" + streetAddress + ", " + city + "\n" + state +
-                ", " + zip + "\n"+ phone);
+              "\n" +  email);
     }
 }
