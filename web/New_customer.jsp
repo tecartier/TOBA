@@ -52,21 +52,21 @@
             <h2>New user information:</h2>
             <input type="hidden" name="action" value="add">  
             <label>First Name:</label>
-            <input type="text" name="firstName" value = ${user.firstName}><br>
+            <input type="text" name="firstName"><br>
             <label>Last Name:</label>
-            <input type="text" name="lastName" value = ${user.lastName}><br>
+            <input type="text" name="lastName"><br>
             <label>Email Address:</label>
-            <input type="email" name="email" value = ${user.email}><br>
+            <input type="email" name="email"><br>
             <label>Phone:</label>
-            <input type="text" name="phone" value = ${user.phone}><br>
+            <input type="text" name="phone"><br>
             <label>Street Address:</label>
-            <input type="text" name="streetAddress" value = ${user.streetAddress}><br>
+            <input type="text" name="streetAddress" ><br>
             <label>City:</label>
-            <input type="text" name="city" value = ${user.city}><br>
+            <input type="text" name="city"><br>
             <label>State:</label>
-            <input type="text" name="state" value = ${user.state}><br>
+            <input type="text" name="state" ><br>
             <label>Zip Code:</label>
-            <input type="text" name="zip" value = ${user.zip}><br>
+            <input type="text" name="zip"><br>
             <label>&nbsp;</label>
             <input type=submit value="Register">
         </form>
